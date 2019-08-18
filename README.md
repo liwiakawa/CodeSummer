@@ -6,13 +6,13 @@
 * [Setup](#setup)
 
 ## General info
-This project is simple Lorem ipsum dolor generator.
+This project is simple website to improve my skills with webTechnologies.
 	
 ## Technologies
 Project is created with:
-* Lorem version: 12.3
-* Ipsum version: 2.33
-* Ament library version: 999
+* HTML5
+* CSS3
+
 	
 ## Setup
 To run this project, install it locally using npm:
