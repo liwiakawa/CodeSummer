@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Space Mono', monospace;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
 h1,
@@ -30,7 +30,7 @@ h3 {
 
 a {
   color: #FF4907;
-  
+
 }
 
 p {
@@ -49,11 +49,12 @@ nav {
   top: 0;
   z-index: 1;
 }
+
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  
+
 }
 
 nav li {
@@ -62,7 +63,7 @@ nav li {
   margin: 25px 12.5px 25px 12.5px;
   display: inline-block;
   font-weight: 900;
-  
+
 }
 
 nav li a {
@@ -75,10 +76,15 @@ header h1 {
   letter-spacing: 1px;
 }
 
-.col-md-5 offset-md-1::after{
+.col-md-5 offset-md-1::after {
   position: absolute;
   background-image: url('../img/cross.svg');
   background-color: aqua;
+  position: absolute;
+  width: 800px;
+  z-index: -1;
+  top: 0;
+  left: -100px;
 
 
 }
@@ -89,7 +95,7 @@ header .tagline {
   font-size: 18px;
   font-weight: 400;
   margin-top: 10px;
-  
+
 }
 
 header {
@@ -126,22 +132,22 @@ footer {
 }
 
 .by {
-  writing-mode:tb-rl;
-     -webkit-transform:rotate(180deg);
-     -moz-transform:rotate(180deg);
-     -o-transform: rotate(180deg);
-     white-space:nowrap;
-     float:left; 
-     display:inline-block;
-     color: white;
-     font-size: 80%;
+  writing-mode: tb-rl;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  white-space: nowrap;
+  float: left;
+  display: inline-block;
+  color: white;
+  font-size: 80%;
 }
 
-#title{
+#title {
   color: white;
- }
+}
 
-.header-box{
+.header-box {
   width: 100%;
   display: inline-block;
 }
@@ -150,12 +156,56 @@ li {
   list-style-type: none;
 }
 
-#contact{
+#contact {
   text-align: center;
 }
 
 
-.link{
+.link {
   text-decoration: underline;
+}
+
+.socialmedia {
+  position: fixed;
+  left: 0;
+  top: 30vh;
+  width: 40px;
+}
+
+.author {
+  position: relative;
+}
+
+.author::before {
+  content: url(../img/cross.svg);
+  position: absolute;
+  width: 190px;
+  top: -40px;
+  z-index: -1;
+  left: -100px;
+}
+
+.decorated::after {
+  content: url('../img/line.svg');
+  position: absolute;
+
+}
+
+h2.contact-heading::before {
+	content: url("../img/line.svg");
+	position: absolute;
+	width: 900px;
+	z-index: -1;
+  left: 100px;
+  bottom: -50px;
+}
+
+.contact {
+  text-align: center;
+}
+
+h2.contact-heading {
+  font-size: 100px;
+  position: relative;
 }
 
